@@ -2,7 +2,7 @@
 //  HDThemeManager.h
 //  HDThemeExample
 //
-//  Created by Don on 2019/4/10.
+//  Created by hedong on 2019/4/10.
 //  Copyright © 2019 Don. All rights reserved.
 //
 
@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)defaultManager;
 
-- (void)changeThemeWithThemeName:(NSString *)themeName;
+- (void)loadTheme:(NSString *)themeName;
+
+- (void)changeTheme;
 
 - (void)changeThemeOfView:(UIView *)view;
 

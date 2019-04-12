@@ -2,7 +2,7 @@
 //  HDThemeManager.m
 //  HDThemeExample
 //
-//  Created by Don on 2019/4/10.
+//  Created by hedong on 2019/4/10.
 //  Copyright © 2019 Don. All rights reserved.
 //
 
@@ -29,10 +29,8 @@ static NSString * const kThemeName = @"HDTheme.themeName";
     return manager;
 }
 
-- (void)changeThemeWithThemeName:(NSString *)themeName {
+- (void)loadTheme:(NSString *)themeName {
     [[NSUserDefaults standardUserDefaults] setObject:themeName forKey:kThemeName];
-    
-    [[NSUserDefaults standardUserDefaults] synchronize];
     
     NSString *themeURLString = [[NSBundle mainBundle] pathForResource:themeName ofType:@"plist"];
     
@@ -40,13 +38,15 @@ static NSString * const kThemeName = @"HDTheme.themeName";
     
     if (theme) {
         self.theme = theme;
-        
-        for (UIViewController *controller in [HDViewControllerStore shareInstance].controllers) {
-            [self changeThemeInView:controller.view];
-        }
     }
     else {
         NSLog(@"Parse plist file failed");
+    }
+}
+
+- (void)changeTheme {
+    for (UIViewController *controller in [HDViewControllerStore shareInstance].controllers) {
+        [self changeThemeInView:controller.view];
     }
 }
 

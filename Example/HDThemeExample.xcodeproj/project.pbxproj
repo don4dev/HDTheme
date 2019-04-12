@@ -18,7 +18,6 @@
 		5094E25C225D9134002718DD /* HDViewControllerStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5094E25B225D9134002718DD /* HDViewControllerStore.m */; };
 		5094E262225D94BD002718DD /* UIViewController+HDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5094E261225D94BD002718DD /* UIViewController+HDTheme.m */; };
 		5094E265225D9E77002718DD /* HDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5094E264225D9E77002718DD /* HDThemeManager.m */; };
-		5094E267225DC00C002718DD /* theme1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5094E266225DC00C002718DD /* theme1.plist */; };
 		5094E26A225DC30B002718DD /* HDThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5094E269225DC30B002718DD /* HDThemeModel.m */; };
 		5094E26D225DC3B5002718DD /* HDThemeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5094E26C225DC3B5002718DD /* HDThemeItem.m */; };
 		50FC0F12225F1704001EF654 /* UIView+HDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FC0F11225F1704001EF654 /* UIView+HDTheme.m */; };
@@ -26,6 +25,8 @@
 		50FC0F1D225F4D0B001EF654 /* HDLabelThemeProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FC0F1C225F4D0B001EF654 /* HDLabelThemeProcessor.m */; };
 		50FC0F2022602EDD001EF654 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FC0F1F22602EDD001EF654 /* UIColor+Extension.m */; };
 		50FC0F23226033B8001EF654 /* UILabel+HDTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FC0F22226033B8001EF654 /* UILabel+HDTheme.m */; };
+		50FC0F6F226093DA001EF654 /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50FC0F6E226093DA001EF654 /* theme.plist */; };
+		50FC0F7122609AF4001EF654 /* theme1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50FC0F7022609AF4001EF654 /* theme1.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,6 @@
 		5094E261225D94BD002718DD /* UIViewController+HDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HDTheme.m"; sourceTree = "<group>"; };
 		5094E263225D9E77002718DD /* HDThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDThemeManager.h; sourceTree = "<group>"; };
 		5094E264225D9E77002718DD /* HDThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDThemeManager.m; sourceTree = "<group>"; };
-		5094E266225DC00C002718DD /* theme1.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = theme1.plist; sourceTree = "<group>"; };
 		5094E268225DC30B002718DD /* HDThemeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDThemeModel.h; sourceTree = "<group>"; };
 		5094E269225DC30B002718DD /* HDThemeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDThemeModel.m; sourceTree = "<group>"; };
 		5094E26B225DC3B5002718DD /* HDThemeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDThemeItem.h; sourceTree = "<group>"; };
@@ -84,6 +84,8 @@
 		50FC0F1F22602EDD001EF654 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		50FC0F21226033B8001EF654 /* UILabel+HDTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+HDTheme.h"; sourceTree = "<group>"; };
 		50FC0F22226033B8001EF654 /* UILabel+HDTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HDTheme.m"; sourceTree = "<group>"; };
+		50FC0F6E226093DA001EF654 /* theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = theme.plist; sourceTree = "<group>"; };
+		50FC0F7022609AF4001EF654 /* theme1.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = theme1.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,12 +141,13 @@
 				5094E227225D8E91002718DD /* AppDelegate.m */,
 				5094E229225D8E91002718DD /* ViewController.h */,
 				5094E22A225D8E91002718DD /* ViewController.m */,
-				5094E266225DC00C002718DD /* theme1.plist */,
 				5094E22C225D8E91002718DD /* Main.storyboard */,
 				5094E22F225D8E91002718DD /* Assets.xcassets */,
 				5094E231225D8E91002718DD /* LaunchScreen.storyboard */,
 				5094E234225D8E91002718DD /* Info.plist */,
 				5094E235225D8E91002718DD /* main.m */,
+				50FC0F6E226093DA001EF654 /* theme.plist */,
+				50FC0F7022609AF4001EF654 /* theme1.plist */,
 			);
 			path = HDThemeExample;
 			sourceTree = "<group>";
@@ -322,9 +325,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FC0F7122609AF4001EF654 /* theme1.plist in Resources */,
 				5094E233225D8E91002718DD /* LaunchScreen.storyboard in Resources */,
 				5094E230225D8E91002718DD /* Assets.xcassets in Resources */,
-				5094E267225DC00C002718DD /* theme1.plist in Resources */,
+				50FC0F6F226093DA001EF654 /* theme.plist in Resources */,
 				5094E22E225D8E91002718DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

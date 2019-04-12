@@ -2,7 +2,7 @@
 //  ViewController.m
 //  HDThemeExample
 //
-//  Created by hedong on 2019/4/10.
+//  Created by Don on 2019/4/10.
 //  Copyright © 2019 Don. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property(nonatomic, assign) BOOL isTheme;
 
 @end
 
@@ -20,14 +20,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [[HDThemeManager defaultManager] loadTheme:@"theme1"];
-    
-//    self.label1.themeType = @"1";
 }
 
 - (IBAction)changeTheme:(id)sender {
-    [[HDThemeManager defaultManager] changeTheme];
+    self.isTheme = !self.isTheme;
+    if (self.isTheme) {
+        [[HDThemeManager defaultManager] changeThemeWithThemeName:@"theme1"];
+    }
+    else {
+        [[HDThemeManager defaultManager] changeThemeWithThemeName:@"theme"];
+    }
 }
 
 

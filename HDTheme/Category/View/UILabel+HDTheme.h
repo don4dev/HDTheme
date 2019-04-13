@@ -2,7 +2,7 @@
 //  UILabel+HDTheme.h
 //  HDThemeExample
 //
-//  Created by hedong on 2019/4/12.
+//  Created by Don on 2019/4/12.
 //  Copyright © 2019 Don. All rights reserved.
 //
 

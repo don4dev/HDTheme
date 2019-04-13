@@ -2,12 +2,11 @@
 //  UIViewController+HDTheme.m
 //  HDThemeExample
 //
-//  Created by hedong on 2019/4/10.
+//  Created by Don on 2019/4/10.
 //  Copyright © 2019 Don. All rights reserved.
 //
 
 #import "UIViewController+HDTheme.h"
-#import <objc/runtime.h>
 #import "HDViewControllerStore.h"
 #import "NSObject+Swizzle.h"
 

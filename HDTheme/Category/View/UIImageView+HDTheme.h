@@ -1,8 +1,8 @@
 //
-//  UILabel+HDTheme.h
+//  UIImageView+HDTheme.h
 //  HDThemeExample
 //
-//  Created by Don on 2019/4/12.
+//  Created by Don on 2019/4/13.
 //  Copyright © 2019 Don. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UILabel (HDTheme)
+@interface UIImageView (HDTheme)
 
 @end
 

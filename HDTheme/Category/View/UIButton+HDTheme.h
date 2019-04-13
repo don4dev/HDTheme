@@ -1,8 +1,8 @@
 //
-//  UIViewController+HDTheme.h
+//  UIButton+HDTheme.h
 //  HDThemeExample
 //
-//  Created by Don on 2019/4/10.
+//  Created by Don on 2019/4/13.
 //  Copyright © 2019 Don. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIViewController (HDTheme)
+@interface UIButton (HDTheme)
 
 @end
 
